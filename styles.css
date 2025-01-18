@@ -1,0 +1,234 @@
+
+/* El estilos del Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-columna {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-columna h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-columna p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.social-icon:hover {
+    color: #4CAF50; /* Cambiar color al pasar el cursor */
+}
+
+/* Asegurarse de que el footer se vea bien en pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-columna {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* El estilo para la sección central */
+.contenido-central {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+/* Cada una  columna */
+.contenido-columna {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+/* La descripción */
+.contenido-columna h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contenido-columna p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/*La foto de la entrada */
+.contenido-columna img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Asegurar que el diseño sea responsive */
+@media (max-width: 768px) {
+    .contenido-central {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-columna {
+        flex: none;
+        width: 100%;
+    }
+}
+
+/* Los reset de estilos*/
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* Los estilos generales */
+body{
+    font-family:Arial,sans-serif;
+    line-height: 1.6;
+}
+/* Las barra de la navegacion */
+header{
+    background-color:#4CAF50;
+    padding:10px 0;
+
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.nav-links{
+    list-style:none;
+    display: flex;
+
+}
+.nav-links li{
+    margin: 0 15px;
+
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo img{
+    height: 40px;
+
+}
+/* Los banner principales */
+.hero{
+    background-color:#f1f1f1;
+    text-align: center;
+    padding: 20px 5px;
+}
+.hero1{
+    font-size:3rem;
+    margin-bottom: 10 px;
+}
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+
+}
+.cta-button{
+    background-color: #fae609;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+.cta-button:hover {
+    background-color: #45a049;
+}
+/* Productos destacados */
+.productos-destacados {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #eeeeee;
+}
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.producto img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 1rem;
+}
+
+/* Ofertas del día */
+.ofertas {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.oferta-item {
+    background-color: #ffeb3b;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* Secciones generales */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
