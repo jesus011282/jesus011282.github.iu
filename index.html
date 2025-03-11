@@ -3,155 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAPELERIA EMILIANO</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-
+    <title>Plataforma de Ventas de Viajes</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #0077b6;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        header img {
+            height: 100px;
+            margin-right: 50px;
+        }
+        header div {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .carrusel {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.7s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+        }
+        .slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev {
+            left: 20px;
+        }
+        .next {
+            right: 20px;
+        }
+        .formulario {
+            text-align: center;
+            margin: 20px;
+        }
+        .formulario form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .formulario label {
+            margin: 10px 0 5px;
+            display: block;
+            font-weight: bold;
+        }
+        .formulario input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+       
+       
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #0077b6;
+            color: white;
+        }
+        /* Estilo para los datos de la reserva (en letras pequeñas y lineales) */
+        .datos-reserva {
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+        }
+        .datos-reserva p {
+            display: inline-block;
+            margin-right: 15px;
+        }
+    </style>
 </head>
 <body>
-    <!--Lo que es la barra de navegacion-->
     <header>
-        <nav>
-            <div class="logo">
-                <img src="1.png" alt="logo Papeleria">
-
-            </div>
-            <div class="contenido-columnas">
-                <h2>Bienvenido a la Papeleria Emiliano </h2>
-                <p>
-                    Somos una cadena líder en la venta de artículos de papelería, útiles escolares y material de oficina. 
-            Con años de experiencia en el mercado, ofrecemos productos de calidad a precios accesibles para estudiantes, profesionales y empresas. 
-            Nuestro compromiso es brindar un excelente servicio y garantizar la satisfacción de nuestros clientes.
-        </p>
-                </p>
-            </div>
-            
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <div class="contenido-columna">
-                    <!-- La foto de la entrada de una papelería física -->
-                    <img src="papeleria.jpg" alt="Entrada Papelería Física">
-                    <!-- Sección central: Logotipo, Descripción y Foto -->
-<section class="contenido-central" id="inicio">
-    <div class="contenido-columna">
-        <!-- Logotipo -->
-        <div class="logo">
-            <img src="logo.png" alt="Logotipo Papelería">
+        <img src="logo_UAM.jpg" alt="Logo">
+        
+        <div>
+            <h1>REUNIÓN MVZ</h1>
+            <p>1º Y 2º Generación</p>
         </div>
-    </div>
-    <div class="contenido-columna">
-        <!-- Descripción de la cadena de papelerías -->
-        <h2>Bienvenidos a Papelería Online</h2>
-        <p>
-            Somos una cadena líder en la venta de artículos de papelería, útiles escolares y material de oficina. 
-            Con años de experiencia en el mercado, ofrecemos productos de calidad a precios accesibles para estudiantes, profesionales y empresas. 
-            Nuestro compromiso es brindar un excelente servicio y garantizar la satisfacción de nuestros clientes.
-        </p>
-    </div>
-    <div class="contenido-columna">
-        <!-- Foto de la entrada de una papelería física -->
-        <img src="papeleria.jpg" alt="Entrada Papelería Física">
-    </div>
-</section>
-                </div>
-                <li><a href="#departamentos">Departamentos</a></li>
-                <li><a href="#ofertas">Ofertas del día</a></li>
-                <li><a href="#promociones">Promociones</a></li>
-                <li><a href="#facturacion">Facturación</a></li>
-                <li><a href="#sucursales">Sucursales</a></li>
+       <!-- Menú de Navegación -->
+<nav style="background-color: #0077b6; padding: 15px; text-align: center; width: 100%;">
+    <a href="#Reservacion" style="color: white; font-size: 18px; text-decoration: none; margin: 0 15px;">Reservar</a>
+    <a href="#Inicio" style="color: white; font-size: 18px; text-decoration: none; margin: 0 15px;">Inicio</a>
+</nav>
+</header>
+        <nav>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 20px;">
+                <li><a href="#contactos" style="color: white; text-decoration: none; font-weight: bold;">Contactos</a></li>
             </ul>
         </nav>
     </header>
-    <!--Se realiza un banner principal-->
-    <section class="hero" id="inicio">
-        <hi>Bienvenido a la Papeleria Emiliano</hi>
-        <p>Lo que es mejor calidad de los productos de la oficina y los escolares.</p>
-        <a href="#ofertas" class="cta-button">del dia</a>
+    
+   <!-- Sección de Contactos -->
+<section id="Reservacion" class="datos-reserva" style="font-size: 20px;">
+    <h2 style="font-size: 28px;">RESERVACIÓN</h2>
+    <p>
+        <strong>Teléfono:</strong> 777 49 911 49
+        <a href="https://wa.me/527774991149" target="_blank">
+            <img src="10.jpg" alt="WhatsApp" style="width: 30px; vertical-align: middle; margin-left: 10px;">
+        </a>
+    </p>
+    <p><strong>Número de Cuenta:</strong> (Añadir número aquí)</p>
+    <p><strong>Correo:</strong> <a href="mailto:creanuevo@hotmail.com" style="color: #0077b6; font-size: 22px;">creanuevo@hotmail.com</a></p>
+</section>
+
+
+    </header>
+
+    <section class="carrusel">
+        <div class="slider">
+            
+            <div class="slide"><img src="1.jpg" alt="Viaje 1"></div>
+            <div class="slide"><img src="2.jpg" alt="Viaje 2"></div>
+            <div class="slide"><img src="3.jpg" alt="Viaje 3"></div>
+            <div class="slide"><img src="4.jpg" alt="Viaje 4"></div>
+            <div class="slide"><img src="5.jpg" alt="Viaje 5"></div>
+            <div class="slide"><img src="h.jpg" alt="Viaje 6"></div>
+            <div class="slide"><img src="6.jpg" alt="Viaje 7"></div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const slider = document.querySelector(".slider");
+                const slides = document.querySelectorAll(".slide");
+                const prevButton = document.querySelector(".prev");
+                const nextButton = document.querySelector(".next");
+                let index = 0;
+                const totalSlides = slides.length;
+                let interval;
         
-    </section>
-    <section class="productos-destacados" id="Departamentos">
-        <h2>Productos Destacados</h2>
-        <div class="Productos">
-            <div class="producto">
-                <img src="2.jpg" alt="Cuaderno">
-                <p>Cuaderno de notas</p>
-                <p>$5.00</p>
-        </div>
-        <div class="producto">
-            <img src="lapiz.jpg" alt="Lápiz">
-                <p>Lápiz Basico</p>
-                <p>$2.00</p>
-        </div>
-        <div class="producto">
-            <img src="mochila.jpg" alt="Mochila">
-            <p>Mochila escolar</p>
-            <p>$150.00</p>
-    </section>
-    <!--La oferta de dia -->
-    <section class="ofertas" id="ofertas">
-        <h2>Ofertas del Día</h2>
-        <div class="oferta-item">
-            <h3>Descuento en Lápices</h3>
-            <p>40% de descuento en todos los lápices.</p>
-        </div>
-        <div class="oferta-item">
-            <h3>2x1 en Cuadernos</h3>
-            <p>Compra un cuaderno y el siguiente es gratis.</p>
-            </div>
-    </section>
-    <!--Las promociones de la seccion-->
-    <section class="promociones" id="promociones">
-        <h2>promociones</h2>
-        <p>Aprovecha las grandes ofertas de la temporada</p>
+                function moveSlide(newIndex) {
+                    if (newIndex < 0) {
+                        index = totalSlides - 1;
+                    } else if (newIndex >= totalSlides) {
+                        index = 0;
+                    } else {
+                        index = newIndex;
+                    }
+                    slider.style.transform = `translateX(${-index * 100}%)`;
+                }
+        
+                function nextSlide() {
+                    moveSlide(index + 1);
+                }
+        
+                function prevSlide() {
+                    moveSlide(index - 1);
+                }
+        
+                function startAutoSlide() {
+                    interval = setInterval(nextSlide, 3000);
+                }
+        
+                function resetAutoSlide() {
+                    clearInterval(interval);
+                    startAutoSlide();
+                }
+        
+                prevButton.addEventListener("click", function () {
+                    prevSlide();
+                    resetAutoSlide();
+                });
+        
+                nextButton.addEventListener("click", function () {
+                    nextSlide();
+                    resetAutoSlide();
+                });
+        
+                startAutoSlide();
+            });
+        </script>
 
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
     </section>
 
-    <!--La facturacion-->
-    <section class="facturacion" id="facturacion">
-        <h2>Se genera tu factura</h2>
-        <p>Se accede a la plataforma al generar la factura</p>
+   
 
+  
+
+    
+    <!-- Esta pagina esta realizado por creacionesjy@hotmail.com -->
+    <section class="datos-reserva">
+        <p><strong>Realizado: @creacionesjy derecho reservado </strong></p>
+        <p><strong>Teléfono:</strong> 7701255654</p>
+        <p><strong>Correo:</strong> creanuevo@hotmail.com</p>
     </section>
-    <!--Las sucursales-->
-    <section class="sucursales" id="sucursales">
-        <h2>Ubica nuestras Sucursales</h2>
-        <p>Consulta la ubicación de nuestras tiendas físicas.</p>
+    <style>
+    .datos-reserva {
+        background-color: #e0e0e0; /* Fondo gris claro */
+        padding: 10px;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: #555;
+        border-top: 2px solid #0077b6; /* Línea azul superior */
+    }
+    .datos-reserva p {
+        display: inline-block;
+        margin: 5px 15px;
+    }
+</style>
 
-    </section>
-    <!--La pie de pagina-->
-    <footer>
-        <p>&copy; 2025 papeleria Emiliano. Son todos los derechos reservados</p>
+    <script>
+        // Manejo del formulario de reserva
+        const reservaForm = document.getElementById('reservaForm');
+        const tablaReservas = document.getElementById('tablaReservas').getElementsByTagName('tbody')[0];
 
-    </footer>
-    <script src="script.js"></script>
+        reservaForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Obtener los datos del formulario
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+            const email = document.getElementById('email').value;
+
+            // Crear una nueva fila en la tabla
+            const nuevaFila = tablaReservas.insertRow();
+
+            // Crear celdas para cada dato
+            const celdaNombre = nuevaFila.insertCell(0);
+            const celdaTelefono = nuevaFila.insertCell(1);
+            const celdaEmail = nuevaFila.insertCell(2);
+            const celdaAcciones = nuevaFila.insertCell(3);
+
+            // Asignar los datos a las celdas
+            celdaNombre.textContent = nombre;
+            celdaTelefono.textContent = telefono;
+            celdaEmail.textContent = email;
+
+            // Crear botones de editar
+            const btnEditar = document.createElement('button');
+            btnEditar.textContent = 'Editar';
+            btnEditar.classList.add('btn', 'btn-edit');
+            btnEditar.addEventListener('click', () => editarReserva(nuevaFila));
+
+            // Añadir los botones a la celda de acciones
+            celdaAcciones.appendChild(btnEditar);
+
+            // Limpiar los campos del formulario
+            reservaForm.reset();
+        });
+
+        // Función para editar una reserva
+        function editarReserva(fila) {
+            // Obtenemos los datos de la fila
+            const nombre = fila.cells[0].textContent;
+            const telefono = fila.cells[1].textContent;
+            const email = fila.cells[2].textContent;
+
+            // Colocamos los valores en el formulario
+            document.getElementById('nombre').value = nombre;
+            document.getElementById('telefono').value = telefono;
+            document.getElementById('email').value = email;
+
+            // Eliminar la fila actual para que el usuario pueda actualizarla
+            fila.remove();
+
+            // Cambiar el texto del botón para actualizar
+            reservaForm.querySelector('button').textContent = 'Actualizar Reserva';
+        }
+    </script>
 </body>
-<!-- Footer -->
-<footer>
-    <div class="footer-contenido">
-        <div class="footer-columna">
-            <h3>ATENCIÒN AL CLIENTE</h3>
-            <p>Teléfono: 777 512 21 13</p>
-            <p>Email: emiliano@papeleriaonline.com</p>
-        </div>
-        <div class="footer-columna">
-            <p>&copy; 2025 Papelería Online. Todos los derechos reservados.</p>
-        </div>
-        <div class="footer-columna">
-            <h3>Síguenos</h3>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
-                <a href="https://facebook.com" target="_blank" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
-                <a href="https://instagram.com" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
-                <a href="https://twitter.com" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
-                
-
-
-            </div>
-        </div>
-    </div>
-</footer>
-
 </html>
