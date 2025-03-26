@@ -8,24 +8,53 @@
         body {
             background-color: #f4f4f4;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         header {
+            flex-direction: column; /* Apila los elementos */
+        text-align: center;
             background-color: #0077b6;
             color: white;
             display: flex;
             align-items: center;
+            justify-content: space-between; /* Ajustar para mantener espaciado */
             padding: 20px;
         }
         header img {
             height: 100px;
-            margin-right: 50px;
+            max-width: 100%; /* Se ajusta en móviles */
         }
+        /* ✅ Títulos en línea */
+.titulo h1 {
+    display: flex;
+    flex-wrap: wrap; /* Se acomoda en pantallas pequeñas */
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+}
+/* ✅ Menú responsivo */
+nav {
+    background-color: #0077b6;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin:5px 0;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+}
         header div {
             text-align: center;
             flex-grow: 1;
         }
         .carrusel {
-            width: 80%;
+            width: 100%;
             margin: auto;
             overflow: hidden;
             position: relative;
@@ -39,6 +68,7 @@
         }
         .slide img {
             width: 100%;
+            height: auto; /* Mantiene proporción */
             border-radius: 10px;
         }
         .prev, .next {
@@ -50,6 +80,7 @@
             border: none;
             padding: 10px;
             cursor: pointer;
+            font-size: 14px;
         }
         .prev {
             left: 20px;
@@ -66,6 +97,9 @@
             padding: 20px;
             border-radius: 10px;
             display: inline-block;
+            max-width: 400px;
+            margin: auto;
+            width: 90%;
         }
         .formulario label {
             margin: 10px 0 5px;
@@ -75,7 +109,7 @@
         .formulario input {
             width: 100%;
             padding: 8px;
-            margin: 5px 0 15px;
+            margin: 5px px;
             border-radius: 5px;
             border: 1px solid #ccc;
         }
@@ -100,8 +134,8 @@
             color: #555;
         }
         .datos-reserva p {
-            display: inline-block;
-            margin-right: 15px;
+            display: block;
+            margin-right: 5px 0;
         }
     </style>
 </head>
@@ -109,19 +143,17 @@
     <header>
         <img src="logo_UAM.jpg" alt="Logo">
         
-        <div>
-            <h1>REUNIÓN MVZ</h1>
-            <p>1º Y 2º Generación</p>
+        <div class="titulo">
+            <h1><span>REUNIÓN MVZ</span> <span>1º   Y 2º Generación</span></h1>
         </div>
        <!-- Menú de Navegación -->
 <nav style="background-color: #0077b6; padding: 15px; text-align: center; width: 100%;">
-    <a href="#Reservacion" style="color: white; font-size: 18px; text-decoration: none; margin: 0 15px;">Reservar</a>
-    <a href="#Inicio" style="color: white; font-size: 18px; text-decoration: none; margin: 0 15px;">Inicio</a>
+ 
 </nav>
 </header>
         <nav>
             <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 20px;">
-                <li><a href="#contactos" style="color: white; text-decoration: none; font-weight: bold;">Contactos</a></li>
+               
             </ul>
         </nav>
     </header>
@@ -135,8 +167,7 @@
             <img src="10.jpg" alt="WhatsApp" style="width: 30px; vertical-align: middle; margin-left: 10px;">
         </a>
     </p>
-    <p><strong>Número de Cuenta:</strong> (Añadir número aquí)</p>
-    <p><strong>Correo:</strong> <a href="mailto:creanuevo@hotmail.com" style="color: #0077b6; font-size: 22px;">creanuevo@hotmail.com</a></p>
+    <p><strong>Correo:</strong> <a href="mailto:creanuevo@hotmail.com" style="color: #0077b6; font-size: 22px;">jjyamanaka@hotmail.com</a></p>
 </section>
 
 
@@ -216,7 +247,7 @@
     
     <!-- Esta pagina esta realizado por creacionesjy@hotmail.com -->
     <section class="datos-reserva">
-        <p><strong>Realizado: @creacionesjy derecho reservado </strong></p>
+        <p><strong>Realizado: @creanuevo derecho reservado </strong></p>
         <p><strong>Teléfono:</strong> 7701255654</p>
         <p><strong>Correo:</strong> creanuevo@hotmail.com</p>
     </section>
@@ -237,6 +268,7 @@
 </style>
 
     <script>
+        
         // Manejo del formulario de reserva
         const reservaForm = document.getElementById('reservaForm');
         const tablaReservas = document.getElementById('tablaReservas').getElementsByTagName('tbody')[0];
@@ -295,5 +327,6 @@
             reservaForm.querySelector('button').textContent = 'Actualizar Reserva';
         }
     </script>
+    
 </body>
 </html>
