@@ -14,6 +14,7 @@
             color: white;
             display: flex;
             align-items: center;
+            justify-content: space-between; /* Ajustar para mantener espaciado */
             padding: 20px;
         }
         header img {
@@ -109,9 +110,8 @@
     <header>
         <img src="logo_UAM.jpg" alt="Logo">
         
-        <div>
-            <h1>REUNIÓN MVZ</h1>
-            <p>1º Y 2º Generación</p>
+        <div class="titulo">
+            <h1><span>REUNIÓN MVZ</span> <span>1º Y 2º Generación</span></h1>
         </div>
        <!-- Menú de Navegación -->
 <nav style="background-color: #0077b6; padding: 15px; text-align: center; width: 100%;">
@@ -135,8 +135,7 @@
             <img src="10.jpg" alt="WhatsApp" style="width: 30px; vertical-align: middle; margin-left: 10px;">
         </a>
     </p>
-    <p><strong>Número de Cuenta:</strong> (Añadir número aquí)</p>
-    <p><strong>Correo:</strong> <a href="mailto:creanuevo@hotmail.com" style="color: #0077b6; font-size: 22px;">creanuevo@hotmail.com</a></p>
+    <p><strong>Correo:</strong> <a href="mailto:creanuevo@hotmail.com" style="color: #0077b6; font-size: 22px;">jjyamanaka@hotmail.com</a></p>
 </section>
 
 
@@ -216,7 +215,7 @@
     
     <!-- Esta pagina esta realizado por creacionesjy@hotmail.com -->
     <section class="datos-reserva">
-        <p><strong>Realizado: @creacionesjy derecho reservado </strong></p>
+        <p><strong>Realizado: @creanuevo derecho reservado </strong></p>
         <p><strong>Teléfono:</strong> 7701255654</p>
         <p><strong>Correo:</strong> creanuevo@hotmail.com</p>
     </section>
@@ -237,6 +236,7 @@
 </style>
 
     <script>
+        
         // Manejo del formulario de reserva
         const reservaForm = document.getElementById('reservaForm');
         const tablaReservas = document.getElementById('tablaReservas').getElementsByTagName('tbody')[0];
@@ -295,5 +295,6 @@
             reservaForm.querySelector('button').textContent = 'Actualizar Reserva';
         }
     </script>
+    
 </body>
 </html>
