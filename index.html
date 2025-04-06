@@ -3,58 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma de Ventas de Viajes</title>
+    <title>Plataforma de medina </title>
     <style>
         body {
             background-color: #f4f4f4;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            
         }
         header {
-            flex-direction: column; /* Apila los elementos */
-        text-align: center;
-            background-color: #0077b6;
+            background-color: #023f21;
             color: white;
             display: flex;
             align-items: center;
-            justify-content: space-between; /* Ajustar para mantener espaciado */
             padding: 20px;
         }
         header img {
-            height: 100px;
-            max-width: 100%; /* Se ajusta en móviles */
+            height: 75px;
+            margin-right: 10px;
         }
-        /* ✅ Títulos en línea */
-.titulo h1 {
-    display: flex;
-    flex-wrap: wrap; /* Se acomoda en pantallas pequeñas */
-    justify-content: center;
-    font-size: 20px;
-    text-align: center;
-}
-/* ✅ Menú responsivo */
-nav {
-    background-color: #0077b6;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-}
-nav a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    margin:5px 0;
-    display: flex;
-    flex-direction: column;
-        align-items: center;
-}
         header div {
             text-align: center;
             flex-grow: 1;
         }
         .carrusel {
-            width: 100%;
+            width: 80%;
             margin: auto;
             overflow: hidden;
             position: relative;
@@ -67,8 +39,7 @@ nav a {
             min-width: 100%;
         }
         .slide img {
-            width: 100%;
-            height: auto; /* Mantiene proporción */
+            width: 75%;
             border-radius: 10px;
         }
         .prev, .next {
@@ -80,7 +51,6 @@ nav a {
             border: none;
             padding: 10px;
             cursor: pointer;
-            font-size: 14px;
         }
         .prev {
             left: 20px;
@@ -97,9 +67,6 @@ nav a {
             padding: 20px;
             border-radius: 10px;
             display: inline-block;
-            max-width: 400px;
-            margin: auto;
-            width: 90%;
         }
         .formulario label {
             margin: 10px 0 5px;
@@ -109,7 +76,7 @@ nav a {
         .formulario input {
             width: 100%;
             padding: 8px;
-            margin: 5px px;
+            margin: 5px 0 15px;
             border-radius: 5px;
             border: 1px solid #ccc;
         }
@@ -134,40 +101,45 @@ nav a {
             color: #555;
         }
         .datos-reserva p {
-            display: block;
-            margin-right: 5px 0;
+            display: inline-block;
+            margin-right: 15px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo_UAM.jpg" alt="Logo">
+        <img src="bueno.jpg" alt="Logo">
         
-        <div class="titulo">
-            <h1><span>REUNIÓN MVZ</span> <span>1º   Y 2º Generación</span></h1>
+        <div>
+            <h1>TORRES MÈDICAS MORROW </h1>
         </div>
        <!-- Menú de Navegación -->
-<nav style="background-color: #0077b6; padding: 15px; text-align: center; width: 100%;">
- 
-</nav>
+<nav style="background-color: #0c3d04; padding: 15px; text-align: center; width: 100%;">
+    <a href="Paciente" style="color: white; font-size: 18px; text-decoration: none; margin: 0 px;">Paciente</a>
+    <a href="Mèdico" style="color: white; font-size: 18px; text-decoration: none; margin: 0 20px;">Mèdico</a>
+<a href="Historial Clìnico" style="color: white; font-size: 18px; text-decoration: none; margin: 0 20px;">Historial Clìnico</a>
+<a href="Cita" style="color: white; font-size: 18px; text-decoration: none; margin: 0 20px;">Cita</a>
+</nav> 
 </header>
         <nav>
             <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 20px;">
-               
+                <li><a href="#contactos" style="color: white; text-decoration: none; font-weight: bold;">Contactos</a></li>
             </ul>
         </nav>
     </header>
     
    <!-- Sección de Contactos -->
-<section id="Reservacion" class="datos-reserva" style="font-size: 20px;">
-    <h2 style="font-size: 28px;">RESERVACIÓN</h2>
+<section id="REALIZAR LA CITA" class="datos-reserva" style="font-size: 20px;">
+    <h2 style="font-size: 28px;">REALIZAR LA CITA</h2>
     <p>
-        <strong>Teléfono:</strong> 777 49 911 49
-        <a href="https://wa.me/527774991149" target="_blank">
-            <img src="10.jpg" alt="WhatsApp" style="width: 30px; vertical-align: middle; margin-left: 10px;">
+        <strong>Teléfono:</strong> 777 162 7438
+        <a href="https://wa.me/527771627438" target="_blank">
+            <img src="logo.jpg" alt="WhatsApp" style="width: 30px; vertical-align: middle; margin-left: 10px;">
         </a>
     </p>
-    <p><strong>Correo:</strong> <a href="mailto:creanuevo@hotmail.com" style="color: #0077b6; font-size: 22px;">jjyamanaka@hotmail.com</a></p>
+    <p><strong>Direcciòn:Morrow 26 Esq. Avenida Morelos
+        Cuernavaca, Morelos, 62000</strong> Horarios: Lunes A viernes 10:00 am A 20:00 pm y Sabado 10:00 am a 16:00 pm </p>
+    <p><strong>Correo:</strong> <a href="mailto:yamanaka_14@hotmail.com" style="color: #0077b6; font-size: 22px;">yamanaka_14@hotmail.com</a></p>
 </section>
 
 
@@ -176,13 +148,11 @@ nav a {
     <section class="carrusel">
         <div class="slider">
             
-            <div class="slide"><img src="1.jpg" alt="Viaje 1"></div>
-            <div class="slide"><img src="2.jpg" alt="Viaje 2"></div>
-            <div class="slide"><img src="3.jpg" alt="Viaje 3"></div>
-            <div class="slide"><img src="4.jpg" alt="Viaje 4"></div>
-            <div class="slide"><img src="5.jpg" alt="Viaje 5"></div>
-            <div class="slide"><img src="h.jpg" alt="Viaje 6"></div>
-            <div class="slide"><img src="6.jpg" alt="Viaje 7"></div>
+            <div class="slide"><img src="th (1).jpg" alt="1"></div>
+            <div class="slide"><img src="th (2).jpg" alt="2"></div>
+            <div class="slide"><img src="th.jpg" alt=""></div>
+            
+            
         </div>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -245,11 +215,20 @@ nav a {
   
 
     
-    <!-- Esta pagina esta realizado por creacionesjy@hotmail.com -->
+    <!-- Esta pagina esta realizado por creanuevo@hotmail.com -->
+    
+    <section>
+        <h2>Descripción de la empresa</h2>
+        <p>El Dr. Luis Fernando Yamanaka Buenrostro es un médico cirujano egresado de la Universidad Latinoamericana (ULA) en Cuernavaca, Morelos. Cuenta con una cédula profesional número 08741379. Además, ha realizado un diplomado de Colposcopia en el Hospital Adolfo López Mateos en la Ciudad de México y un diplomado de Ultrasonido General e Intervencionista-Materno Fetal en Cuernavaca, Morelos. Es miembro del Colegio de Médicos Cirujanos del Estado de Morelos y del Colegio Mexicano de Ginecólogos dedicados a la Colposcopia.</p>
+        <p>En su consultorio, el Dr. Yamanaka ofrece servicios de colposcopía, ginecología y diagnóstico médico, especializándose en el Virus del Papiloma Humano (VPH). También ofrece un paquete de promoción que incluye consulta médica, papanicolaou, colposcopía, ultrasonido pélvico y revisión de mamas, con el objetivo de prevenir y tratar a tiempo el cáncer cervicouterino y el cáncer de mama. Además, realiza estudios de androscopia y citología uretral en hombres para prevenir el cáncer de pene y las lesiones asociadas al VPH.</p>
+        <p>El Dr. Yamanaka también participa en el programa de radio Mundo 96.5 FM, donde se abordan temas relacionados con el VPH y se responden preguntas frecuentes. En su consulta general, ofrece control y seguimiento de diversas condiciones de salud, como diabetes mellitus, hipertensión arterial, colesterol, triglicéridos, climaterio, menopausia, control prenatal y planificación familiar, entre otros. El Dr. Yamanaka busca brindar una mejor calidad de vida a sus pacientes, priorizando siempre su salud.</p>
+    </section>
     <section class="datos-reserva">
         <p><strong>Realizado: @creanuevo derecho reservado </strong></p>
-        <p><strong>Teléfono:</strong> 7701255654</p>
+        <p><strong>Teléfono:</strong> 7778673670</p>
+      <a><img src="whatsapp-logo.jpg" alt="WhatsApp" style="width: 30px; vertical-align: middle; margin-left: 10px;"></a>
         <p><strong>Correo:</strong> creanuevo@hotmail.com</p>
+    </section>
     </section>
     <style>
     .datos-reserva {
@@ -268,7 +247,6 @@ nav a {
 </style>
 
     <script>
-        
         // Manejo del formulario de reserva
         const reservaForm = document.getElementById('reservaForm');
         const tablaReservas = document.getElementById('tablaReservas').getElementsByTagName('tbody')[0];
@@ -327,6 +305,5 @@ nav a {
             reservaForm.querySelector('button').textContent = 'Actualizar Reserva';
         }
     </script>
-    
 </body>
 </html>
